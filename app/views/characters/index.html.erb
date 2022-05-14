@@ -1,0 +1,45 @@
+
+   <div class="title_div">
+   <h1>Star Wars Characters 🚀</h1>
+   </div>
+
+
+
+    <div class="index_div">
+
+        <% @characters.each do |character| %>
+        <div class="each">
+            <h2><%= link_to character[:name], character_path(character[:id]) %></h2>
+            <ul>
+                <li>
+                    Height: <%= character[:height] %>
+                </li>
+                <li>
+                    Mass: <%= character[:mass] %>
+                </li>
+                <li>
+                    Hair_color: <%= character[:hair_color] %>
+                </li>
+                <li>
+                    Skin_color: <%= character[:skin_color] %>
+                </li>
+                <li>
+                    Eye_color: <%= character[:eye_color] %>
+                </li>
+                <li>
+                    Birth_year: <%= character[:birth_year] %>
+                </li>
+
+
+                <% if character[:gender] != 'n/a'%>
+                <li>
+                    Gender: <%= character[:gender] %>
+                    <% end %>
+
+                </li>
+            </ul>
+        </div>
+        <% end %>
+
+    </div>
+

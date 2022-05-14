@@ -1,0 +1,64 @@
+
+body {
+    background-image: url("nVsD9zM.jpeg"); 
+    background-repeat: no-repeat;
+    background-attachment: contain;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: rgb(12, 12, 12);
+
+}
+
+
+.title_div {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+.index_div{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.each{
+    width: 46%;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+.show_div{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    border: solid 1px black;
+
+}
+
+.name_div {
+    width: 250px;
+    margin: 10px;
+}
+
+.image_div{
+    height: 450px;
+    
+}
+
+.character_image {
+    height: 100%;
+    width: 100%;
+    
+}

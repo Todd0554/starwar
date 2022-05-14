@@ -1,0 +1,32 @@
+
+    
+
+    <div class="show_div">
+
+        <div class="name_div">
+            <h1><%= @character[:name] %></h1>
+        </div>
+
+        <div class="image_div">
+            <%= image_tag @character[:pic], :class => "character_image" %>
+        </div>
+
+    </div>
+
+
+    <div class="title_div">
+
+        <% case %>
+        <% when @character[:id] == 1 %>
+
+        <%= link_to "Next", character_path(@character[:id] + 1) %>
+        <% when @character[:id] > 1 && @character[:id] < @characters.length %>
+        <%= link_to "Previous", character_path(@character[:id] - 1) %>
+        <%= link_to "Next", character_path(@character[:id] + 1) %>
+        <% when @character[:id] = @characters.length %>
+        <%= link_to "Previous", character_path(@character[:id] - 1) %>
+        <% end %>
+
+
+    </div>
+
